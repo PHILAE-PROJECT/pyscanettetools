@@ -42,7 +42,7 @@ def executability(traceset_grouped,separative_token='_'):
 
 
 
-def coverage(traceset_grouped,separative_token='_'):
+def coverage_report(traceset_grouped,separative_token='_'):
     """
 
     :param path: path of the traces that will be analyzed by Coverage.py

@@ -14,11 +14,11 @@ Allows you to generate a big scanette dataset in small amount of time
     list_of_traces=[['debloquer_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'scanner_0', 'transmission_0', 'abandon_?', 'payer_1'],['ajouter_0']]
 Each action or event should be encoded in this fashion *action+separative_token+return_code*
  
-#### Executability
+#### executability
  takes as input an abstract traceset and return the executability of the traceset : How many traces are well formed and can be executed as successful tests on the scanette code.
 
 
-####  coverage
+####  coverage_report
  Take as input an abstract traceset and print a coverage report of the traces executed as tests on the scanette code
  
 
