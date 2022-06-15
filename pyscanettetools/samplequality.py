@@ -2,7 +2,7 @@ from . replay.utils_replay import list_of_traces_to_dict,abstract2parameters
 from . replay.utils_executor import OneTraceExecutor
 from agilkia import TraceSet
 
-from coverage import Coverage
+import coverage
 
 def executability(traceset_grouped,separative_token='_'):
 
@@ -67,7 +67,7 @@ def coverage_report(traceset_grouped,separative_token='_'):
 
     traces_dict=list_of_traces_to_dict(list_of_traces)
 
-    cov = Coverage()
+    cov = coverage.Coverage()
     cov.start()
     errors = 0
     executed_sessions = 0
