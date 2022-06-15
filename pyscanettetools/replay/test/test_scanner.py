@@ -9,7 +9,7 @@ from mockito import when,unstub
 class TestScanner(unittest.TestCase):
 
     def setUp(self):
-        self.folderPath="C:/Users/QZTD9928/Documents/code/pyscannetteAgilkia/csv/"
+        self.folderPath="../csv/"
         self.scan=Scanner(True,self.folderPath+"produitsOK.csv")
     def tearDown(self) -> None:
         unstub()

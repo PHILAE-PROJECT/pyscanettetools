@@ -5,7 +5,7 @@ from ..src.Scanner import Scanner
 
 class TestIntegration(unittest.TestCase):
     def setUp(self):
-        self.folderPath="C:/Users/QZTD9928/Documents/code/pyscannetteAgilkia/csv/"
+        self.folderPath="../csv/"
         self.myCashier=Cashier(bycsv=True,path=self.folderPath+'produitsOK.csv')
         self.myScanner=Scanner(bycsv=True,path=self.folderPath+'produitsOK.csv')
     def tearDown(self):

@@ -101,7 +101,7 @@ if __name__=='__main__':
     print(coverage(traceset_grouped))
     from utils_example import read_traces_csv
     from pathlib import Path
-    traceset = read_traces_csv(Path("csv/1026-steps.csv"))
+    traceset = read_traces_csv(Path("replay/csv/1026-steps.csv"))
     traceset2 = traceset.with_traces_grouped_by("sessionID", property=True)
     print(executability(traceset2))
     coverage(traceset2)

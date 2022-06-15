@@ -8,4 +8,4 @@ def generation(path,number_of_sessions,balanced=True):
     g.create_raw_dataset()
     g.export_dataset(path=path)
 if '__name__'=='__main__':
-    generation(path='csv/fake_generation_150.csv',number_of_session=150,balanced=True)
+    generation(path='replay/csv/fake_generation_150.csv', number_of_session=150, balanced=True)

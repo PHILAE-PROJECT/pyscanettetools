@@ -5,7 +5,7 @@ from ..src.ItemsDB import ItemsDB
 class TestItemsDB(unittest.TestCase):
 
     def setUp(self):
-        self.folderPath="C:/Users/QZTD9928/Documents/code/pyscannetteAgilkia/csv/"
+        self.folderPath="../csv/"
 
     def testItemsDB0bis(self):
         self.assertRaises(IOError,ItemsDB,bycsv=True,path=self.folderPath+"produits.txt")

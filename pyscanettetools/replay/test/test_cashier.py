@@ -7,7 +7,7 @@ import mockito
 class TestCashier(unittest.TestCase):
 
     def setUp(self):
-        self.folderPath="C:/Users/QZTD9928/Documents/code/pyscannetteAgilkia/csv/"
+        self.folderPath="../csv/"
         self.cashier=spy(Cashier(bycsv=True,path=self.folderPath+"produitsOK.csv"))
         self.scan=mockito.mock(spec=Scanner,strict=True)
 

@@ -79,5 +79,5 @@ if __name__=='__main__':
     g.balanced_dataset()
     g.create_raw_dataset()
     # g.export_json("40000-steps.json")
-    g.export_dataset(path='../csv/fake_generation_150.csv')
+    g.export_dataset(path='../replay/csv/fake_generation_150.csv')
     print(time.time()-b)

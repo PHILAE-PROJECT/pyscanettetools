@@ -6,7 +6,7 @@ print(executability(traceset_grouped))
 print(coverage_report(traceset_grouped))
 from pyscanettetools.utils_example import read_traces_csv
 from pathlib import Path
-traceset = read_traces_csv(Path("pyscanettetools/csv/1026-steps.csv"))
+traceset = read_traces_csv(Path("pyscanettetools/replay/csv/1026-steps.csv"))
 traceset2 = traceset.with_traces_grouped_by("sessionID", property=True)
 print(executability(traceset2))
-coverage(traceset2)
+coverage_report(traceset2)

@@ -1,15 +1,13 @@
 import unittest
 import sys
-from .src.Scanner import Scanner,ScannerState
+from .src.Scanner import Scanner
 from .src.Cashier import Cashier
-import csv
-import json
-path='C:/Users/QZTD9928/Documents/code/pyscannetteAgilkia/'
+import pathlib
 
-# SCANNER_PRODUCTS = "../csv/produitsScanette.csv"
-# CASHIER_PRODUCTS = '../csv/produitsCaisse.csv'
-# TRACES_PATH_CSV="../csv/out.csv"
-# TRACES_PATH_JSON="../csv/100043-steps.json"
+
+module_path=pathlib.Path(__file__).parent.resolve()
+path=str(module_path.parent.absolute())
+path+='/replay/'
 
 SCANNER_PRODUCTS = path+"/csv/produitsScanette.csv"
 CASHIER_PRODUCTS = path+'/csv/produitsCaisse.csv'
