@@ -15,26 +15,26 @@ def executability(traceset_grouped,separative_token='_'):
     else:
         raise ValueError("traceset_grouped should be an agilkia trace or a list of list")
     errors = 0
-    executed_sessions = 0
+    executed_sessions_id = []
     error_keys=[]
     original_len=len(list_of_traces)
     list_of_traces=abstract2parameters(list_of_traces,separative_token=separative_token)
 
     traces_dict=list_of_traces_to_dict(list_of_traces)
 
-    for k, v in traces_dict.items():
+    for i,(k, v) in enumerate(traces_dict.items()):
 
         o = OneTraceExecutor()
         o.setUp()
         o.SEQ = v
         try:
             o.test_one_trace_as_test()
-            executed_sessions += 1
+            executed_sessions_id.append(i)
         except:
             error_keys.append(k)
             errors += 1
 
-    return executed_sessions
+    return len(executed_sessions_id),executed_sessions_id
 
     # print('---- Errors', errors)
     # print('---- Session Id(s) who failed at being executed as a test :'+str(error_keys))
